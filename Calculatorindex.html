@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator in webtech</title>
+    <link rel="stylesheet" type="text/css" href="Calculator.html">
+    <link rel="stylesheet" href="Calculator.css"/>
+    <style type="text/css">
+       /*
+        *{
+            padding:0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .mdiv{
+            background-image: url("https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_1280.jpg");
+            height: 100vh;
+            width: 100%;
+            background-color: white;
+            position: fixed;
+    
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calc{
+            width: 300px;
+            height: 500px;
+            background-color:black;
+            border-radius: 20px;
+            position: absolute;
+        }
+        .op{
+        text-align:right;
+        } 
+        .sev{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border:none;
+        }
+        .eight{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border:none;
+        }
+        .nine{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .opr1{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            background-color: orangered;
+            border: none;
+        }
+        .four{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .five{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .six{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .opr2{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            background-color: orangered;
+            border: none;
+        }
+        .one{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+    
+        }
+        .two{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .three{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .opr3{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            background-color: orangered;
+            border: none;
+        }
+        .ac{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .c{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .mod{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .opr4{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            background-color: orangered;
+            border: none;
+        }
+        .zero{
+            height: 50px;
+            width: 100px;
+            border-radius:20px ;
+            border: none;
+
+        }
+        .dot{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+        .opr5{
+            height: 50px;
+            width: 50px;
+            border-radius:20px ;
+            border: none;
+        }
+            input[type="button"]{
+                margin-top: 5px;
+                margin-left: 18px;
+                border: none;
+
+        }
+          input[type="text"]{
+
+            height: 20px;
+            font-weight: bolder;
+            background-color: black;
+            outline: none;
+            border: none;
+            color: white;
+            background-color: black;
+            outline: none;
+            border:none ;
+            font-size: large;
+
+          }
+        .title{
+            align-items: center;
+            margin-top: -600px;
+            margin-left: 10px;
+        }
+
+        
+      input[type="text"]{
+          height: 50px;
+          width: 300px;
+          margin-top: 40px;
+          color: white;
+background-color: black;
+outline: none;
+border: none;
+
+
+}
+
+
+    </style>*/
+</head>
+<body>
+    <div class="mdiv">
+        <h1 class="title">CALCULATOR</h1>
+        <div class="calc">
+        <form>
+            <div>
+                <input type="text" name="op" class="op">
+            </div>
+            <br>
+            <div>
+                <input type="button" name="AC" value="AC" onclick="op.value=''" class="ac">
+                <input type="button" name="C" value="C" onclick="op.value=''" class="c">
+                <input type="button" name="mod" value="%"onclick="op.value+='%'" class="mod">
+                <input type="button" name="operator" value="/"onclick="op.value+='/'" class="opr4">
+            </div>
+            <br>
+            <div>
+                <input type="button" name="number" value="7" onclick="op.value+='7'"class="sev">
+                <input type="button" name="number" value="8" onclick="op.value+='8'" class="eight">
+                <input type="button" name="number"value="9"onclick="op.value+='9'" class="nine">
+                <input type="button" name="operator"value="X"onclick="op.value+='*'" class="opr1">
+
+            </div>
+            <br>
+            <div>
+                <input type="button" name="number" value="4" onclick="op.value+='4'" class="four">
+                <input type="button" name="number" value="5" onclick="op.value+='5'" class="five">
+                <input type="button" name="number"value="6"onclick="op.value+='6'" class="six">
+                <input type="button" name="operator"value="-"onclick="op.value+='-'" class="opr2">
+ 
+            </div>
+            <br>
+            <div>
+                <input type="button" name="number" value="1" onclick="op.value+='1'" class="one">
+                <input type="button" name="number" value="2" onclick="op.value+='2'" class="two">
+                <input type="button" name="number"value="3"onclick="op.value+='3'" class="three">
+                <input type="button" name="operator"value="+"onclick="op.value+='+'" class="opr3">
+
+            </div>
+            <br>
+            <div>
+                <input type="button" name="number" value="0" onclick="op.value+='0'" class="zero">
+
+                <input type="button" name="operator" value="." onclick="op.value+='.'" class="dot">
+                <input type="button" name="operator" value="=" onclick="op.value=eval(op.value)" class="opr5">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
